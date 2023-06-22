@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB3B"
+    android:backgroundTint="#FFEB3B"
+    android:foregroundTint="#000000">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:text="Добро пожаловать в путеводитель!"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            android:textAlignment="center"
+            app:flow_horizontalAlign="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <TextView
+                android:id="@+id/surname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Фамилия"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/surname_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            android:textAlignment="center"
+            app:flow_horizontalAlign="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Имя"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/name_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="423dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            android:textAlignment="center"
+            app:flow_horizontalAlign="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="E-mail"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/email_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="Время\nпребытия"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/time_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="time"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="#000000"
+            android:backgroundTint="#000000"
+            android:drawableTint="#ffffff"
+            android:text="Далее"
+            app:cornerRadius="10dp"
+            app:iconTint="#ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+            app:strokeColor="#ffffff"
+            tools:background="#000000"
+            tools:backgroundTint="#000000" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
